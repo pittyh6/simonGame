@@ -53,22 +53,19 @@ body {
 }
 .mobPlay{
   display: none;
-  height: 80px;
-  text-align: center;
-  width: 200px;
+  height: 70px;
+  width: 35%;
+  margin-top: 7%;
+}
 
-}
-.level-title-mob{
-  display: none;
-}
 
 @media only screen and (max-width: 1000px) {
  
   .mobPlay{
     display: inline-block;
-    height: 10%;
-    width: 20%;
-    margin-top: 10%;
+    height: 70px;
+    width: 35%;
+    margin-top: 30%;
   }
   .btn {
     margin: 10px;

@@ -31,14 +31,17 @@ $(document).on('keypress', function (e) {
         started = true;
     }
 });
+
 /* detect when a play button been pressed. */
 $(".mobPlay").on('touchstart', function (e) {
+
     if (!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
     }
 });
+
 
 function nextSequence() {
     userClickedPattern = [];
@@ -79,7 +82,7 @@ function checkAnswer(currentLevel) {
         setTimeout(function () {
             $("body").removeClass("game-over");
         }, 200);
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("Game Over, Press Key to Restart");
         startOver();
     }
 }
