@@ -68,19 +68,25 @@ body {
     display: inline-block;
     height: 10%;
     width: 20%;
-    margin-top: 5%;
+    margin-top: 10%;
   }
   .btn {
     margin: 10px;
     display: inline-block;
-    height: 90px;
-    width: 35%;
+    height: 200px;
+    width: 40%;
     border: 8px solid black;
     border-radius: 10%;
   }
   .row{
     width: 100%;
+    margin-top: 5%;
   }
-
+  #level-title{
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
  
 }
+
+
