@@ -31,6 +31,14 @@ $(document).on('keypress', function (e) {
         started = true;
     }
 });
+/* detect when a play button been pressed. */
+$(document).on('tap', function (e) {
+    if (!started) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
+});
 
 function nextSequence() {
     userClickedPattern = [];
@@ -96,3 +104,4 @@ function animatePress(currentColour) {
         $("#" + currentColour).removeClass("pressed");
     }, 100);
 }
+
