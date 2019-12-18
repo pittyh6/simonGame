@@ -32,7 +32,7 @@ $(document).on('keypress', function (e) {
     }
 });
 /* detect when a play button been pressed. */
-$(document).on('tap', function (e) {
+$(".mobPlay").on('touchstart', function (e) {
     if (!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
